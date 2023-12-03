@@ -1,0 +1,1139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &279684119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279684123}
+  - component: {fileID: 279684122}
+  - component: {fileID: 279684121}
+  - component: {fileID: 279684120}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &279684120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279684119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &279684121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279684119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &279684122
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279684119}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &279684123
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279684119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2010501579}
+  - {fileID: 2013125418}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &602920464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602920467}
+  - component: {fileID: 602920466}
+  - component: {fileID: 602920465}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &602920465
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602920464}
+  m_Enabled: 1
+--- !u!20 &602920466
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602920464}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &602920467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602920464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1081467382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081467384}
+  - component: {fileID: 1081467383}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1081467383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081467382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb78293fb305df74aabefb85b2a9662a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: 'Game 1: 4 green, 7 blue; 2 blue, 4 red; 5 blue, 2 green, 2 red; 1 green,
+    3 red, 9 blue; 3 green, 9 blue; 7 green, 2 blue, 2 red
+
+    Game 2: 1 blue,
+    2 red; 1 green, 2 blue, 1 red; 1 red, 5 green; 3 red, 2 blue, 8 green; 3 blue,
+    2 red, 4 green; 2 blue, 4 green, 3 red
+
+    Game 3: 7 red, 7 blue, 9 green;
+    15 green, 4 red, 8 blue; 3 green, 12 blue, 6 red
+
+    Game 4: 4 blue, 11 green,
+    6 red; 4 green, 2 red; 12 red, 1 blue, 3 green
+
+    Game 5: 10 green, 4 blue,
+    9 red; 3 green, 15 blue, 11 red; 15 blue, 1 green, 2 red; 8 red, 8 blue, 5 green
+
+    Game
+    6: 5 green, 19 red; 6 green, 13 red, 2 blue; 2 blue, 16 red, 4 green; 13 red,
+    9 blue, 5 green
+
+    Game 7: 1 blue, 6 red, 6 green; 7 blue, 4 red; 6 green,
+    1 red, 11 blue; 3 green, 4 blue, 4 red; 6 green, 13 blue, 11 red
+
+    Game 8:
+    8 green, 2 blue; 20 green, 1 red; 1 blue, 6 red, 6 green; 9 green
+
+    Game
+    9: 5 red; 4 green, 3 red, 1 blue; 1 blue; 6 red, 1 blue, 9 green
+
+    Game 10:
+    2 green, 3 red; 18 blue, 20 green, 9 red; 7 red, 9 blue, 17 green
+
+    Game
+    11: 15 green, 7 blue, 9 red; 7 blue, 10 green, 7 red; 5 red, 3 blue, 10 green;
+    5 blue, 12 green; 14 green, 8 blue, 5 red; 7 blue, 2 red, 5 green
+
+    Game
+    12: 3 green, 1 red, 8 blue; 9 blue, 3 red, 3 green; 4 blue, 1 green; 2 red, 3
+    green, 1 blue; 4 red, 7 blue, 3 green
+
+    Game 13: 14 green, 1 red; 4 green;
+    2 green, 1 blue; 14 green; 13 green, 1 red, 1 blue; 1 blue, 1 red, 5 green
+
+    Game
+    14: 1 blue, 6 red, 13 green; 5 red, 10 blue, 3 green; 19 green, 1 red, 14 blue;
+    4 red, 17 green, 9 blue; 12 green, 10 blue, 7 red
+
+    Game 15: 10 red, 2 blue,
+    18 green; 17 green, 3 blue, 7 red; 18 blue, 8 red, 12 green; 6 blue, 6 green,
+    12 red
+
+    Game 16: 14 blue, 5 green, 12 red; 7 green, 3 red, 9 blue; 4 green,
+    1 red, 8 blue; 9 red, 19 green, 12 blue; 12 blue, 7 red, 6 green; 5 blue, 3 green,
+    6 red
+
+    Game 17: 1 green, 1 blue, 15 red; 1 blue, 3 green, 12 red; 9 blue,
+    2 green, 10 red
+
+    Game 18: 12 red, 7 green, 7 blue; 3 blue, 8 red, 1 green;
+    2 green, 17 red
+
+    Game 19: 1 red, 7 blue, 17 green; 11 red, 15 blue; 11 blue,
+    18 green; 6 blue, 14 green, 14 red; 16 blue, 8 red, 8 green; 17 green, 9 red,
+    1 blue
+
+    Game 20: 11 green; 1 blue, 4 green, 7 red; 7 green; 3 red, 1 blue,
+    6 green
+
+    Game 21: 18 blue, 6 green, 10 red; 12 blue; 9 blue, 2 green, 9
+    red; 9 red, 20 blue, 1 green; 8 blue, 6 red; 19 blue, 1 green, 4 red
+
+    Game
+    22: 4 blue, 16 red, 3 green; 7 blue, 3 green, 12 red; 10 red, 7 green, 10 blue;
+    7 red, 11 blue, 4 green; 3 blue, 1 green, 16 red
+
+    Game 23: 5 green, 8 red,
+    1 blue; 2 red, 5 blue, 3 green; 2 green, 17 blue, 4 red; 2 blue, 2 red; 7 red,
+    1 green, 14 blue; 4 red, 8 blue
+
+    Game 24: 1 blue, 3 green, 1 red; 3 blue,
+    11 green, 15 red; 3 blue, 2 red, 12 green; 9 green, 6 red, 2 blue; 15 green,
+    12 red, 3 blue; 13 green, 1 blue, 13 red
+
+    Game 25: 6 blue, 5 red, 10 green;
+    9 red, 3 blue, 3 green; 6 blue, 11 red, 15 green; 7 green, 10 red, 4 blue; 2
+    red, 20 blue, 11 green
+
+    Game 26: 3 blue, 5 red, 10 green; 7 green, 6 red;
+    7 green, 1 red, 3 blue; 10 green, 4 red, 3 blue; 4 red, 7 green, 3 blue; 8 green,
+    4 red
+
+    Game 27: 16 green, 6 blue, 4 red; 3 red, 6 blue, 7 green; 10 green;
+    6 green, 1 red
+
+    Game 28: 5 green, 5 red, 2 blue; 1 blue, 9 red, 6 green;
+    2 blue, 3 red; 1 blue, 1 green, 5 red; 4 green, 3 red; 9 green, 1 blue, 14 red
+
+    Game
+    29: 1 red, 2 green, 13 blue; 1 green, 2 red, 9 blue; 12 red; 3 blue, 5 red
+
+    Game
+    30: 8 blue, 3 red, 9 green; 10 green, 9 blue; 9 green, 12 blue; 3 blue, 2 red,
+    4 green; 8 blue, 9 green; 1 red, 12 blue, 6 green
+
+    Game 31: 8 red, 16 blue;
+    2 red, 1 green, 1 blue; 5 red, 8 blue, 1 green
+
+    Game 32: 3 green, 5 blue,
+    8 red; 10 blue, 1 red, 3 green; 9 green, 3 blue, 2 red; 2 blue, 1 red, 14 green;
+    3 blue, 10 red, 16 green
+
+    Game 33: 1 red, 3 green, 2 blue; 15 blue, 1 green;
+    1 green, 1 red, 10 blue
+
+    Game 34: 4 green, 7 blue; 2 blue, 12 green; 6 red,
+    14 green, 7 blue
+
+    Game 35: 9 blue, 1 green; 2 green, 6 blue, 11 red; 1 green,
+    10 red, 1 blue
+
+    Game 36: 5 blue, 1 green, 2 red; 11 blue, 3 green, 5 red;
+    2 green, 14 blue, 2 red; 3 green, 5 blue, 5 red; 13 blue, 2 green, 5 red; 3 green
+
+    Game
+    37: 4 blue, 2 red, 8 green; 1 blue, 9 green, 4 red; 1 red, 4 green, 1 blue; 16
+    green, 3 blue, 4 red
+
+    Game 38: 9 blue, 9 green; 1 green, 3 blue; 8 blue,
+    6 red, 5 green; 1 green, 9 red, 1 blue
+
+    Game 39: 1 red, 17 green; 1 blue,
+    7 green, 7 red; 6 red, 4 blue
+
+    Game 40: 1 blue, 2 red; 10 blue, 4 green,
+    2 red; 1 green, 11 blue, 3 red; 4 blue, 2 green; 3 blue, 4 red
+
+    Game 41:
+    7 red, 4 blue, 4 green; 10 red, 11 blue, 1 green; 6 red, 6 blue, 4 green; 13
+    blue, 3 red, 7 green; 9 green, 12 blue, 14 red; 9 blue, 12 red, 10 green
+
+    Game
+    42: 3 blue, 1 red, 11 green; 4 blue, 9 green, 8 red; 3 red, 5 blue, 1 green
+
+    Game
+    43: 2 green, 17 blue, 9 red; 16 red, 12 blue, 2 green; 12 red, 12 blue, 7 green;
+    17 red, 16 blue, 7 green
+
+    Game 44: 2 red, 3 green, 5 blue; 5 red, 5 blue,
+    7 green; 2 red, 5 blue, 5 green; 6 red, 5 blue, 2 green
+
+    Game 45: 9 green,
+    1 blue; 1 red, 5 green, 2 blue; 2 blue, 4 green, 9 red; 13 green, 7 red, 1 blue;
+    3 blue, 4 green
+
+    Game 46: 5 green, 7 red; 8 green, 5 blue, 1 red; 1 blue,
+    7 red, 17 green
+
+    Game 47: 1 green, 17 blue; 9 blue, 1 green; 1 blue, 1 red
+
+    Game
+    48: 1 red, 6 green, 7 blue; 9 green, 1 red, 2 blue; 10 blue, 6 green, 1 red;
+    1 red, 4 green, 9 blue; 6 blue, 3 green, 1 red
+
+    Game 49: 1 red, 1 blue,
+    16 green; 3 red, 1 green; 16 green; 2 blue, 8 red, 19 green; 20 green, 9 red;
+    8 green, 6 red
+
+    Game 50: 1 green, 2 blue; 2 red, 3 blue; 4 red, 2 blue;
+    1 green; 3 blue; 3 blue, 2 green, 1 red
+
+    Game 51: 6 blue, 5 green; 6 red,
+    5 green; 6 green, 6 blue, 16 red; 10 red, 10 green, 1 blue
+
+    Game 52: 4 red,
+    5 green, 1 blue; 15 green, 1 blue; 8 green, 5 blue, 5 red; 4 blue, 11 green,
+    1 red
+
+    Game 53: 5 green, 3 blue, 5 red; 2 red, 4 blue, 1 green; 1 red, 2
+    green; 11 red
+
+    Game 54: 7 green, 16 blue, 5 red; 5 green; 10 blue, 6 green,
+    5 red; 3 green
+
+    Game 55: 3 green; 16 green, 1 blue; 13 green, 19 blue, 1
+    red; 13 green, 18 blue
+
+    Game 56: 9 green; 3 blue, 1 red, 10 green; 1 red,
+    4 blue, 9 green
+
+    Game 57: 14 blue, 2 red, 3 green; 1 red, 8 blue, 7 green;
+    1 green, 3 red, 15 blue; 5 green, 12 blue; 4 green, 15 blue
+
+    Game 58: 9
+    red, 5 green; 10 green, 11 red, 1 blue; 12 green, 17 red, 1 blue; 1 blue, 1 green,
+    17 red; 14 red, 1 blue, 16 green
+
+    Game 59: 2 red, 12 blue, 10 green; 6 green,
+    1 red, 14 blue; 14 blue, 9 green, 2 red; 12 green, 14 blue, 2 red
+
+    Game
+    60: 5 blue, 8 green; 1 red, 6 green, 7 blue; 1 blue
+
+    Game 61: 5 red, 2 blue,
+    5 green; 2 blue, 11 green; 1 blue, 2 red, 14 green; 3 green; 4 red, 13 green;
+    2 blue, 6 green, 1 red
+
+    Game 62: 1 red, 1 blue, 2 green; 3 red, 1 blue,
+    2 green; 1 blue, 10 red; 6 red, 1 blue
+
+    Game 63: 7 red, 6 blue, 4 green;
+    2 blue, 5 green, 8 red; 5 blue, 4 green, 10 red; 4 blue, 7 red, 10 green; 5 blue,
+    10 green, 8 red; 4 blue, 10 green, 3 red
+
+    Game 64: 6 red, 7 green, 15 blue;
+    8 blue, 16 green, 3 red; 11 green, 12 blue; 4 red, 17 blue, 8 green
+
+    Game
+    65: 2 blue, 7 green; 2 red, 8 blue; 2 green, 1 red, 5 blue; 1 green, 2 blue;
+    19 green, 7 blue; 2 red, 3 blue, 14 green
+
+    Game 66: 15 green, 7 blue; 9
+    blue, 3 green, 16 red; 1 red, 1 blue, 16 green; 18 red, 8 blue, 11 green
+
+    Game
+    67: 1 blue, 1 green, 2 red; 5 green, 8 red, 2 blue; 7 red, 1 blue
+
+    Game
+    68: 3 blue, 10 red; 13 red, 1 green; 5 blue, 5 red; 2 blue, 1 green, 16 red;
+    16 red, 3 blue
+
+    Game 69: 7 red, 1 blue, 3 green; 14 green, 2 blue; 3 green,
+    2 blue; 4 red, 1 green, 1 blue; 10 red, 14 green, 2 blue
+
+    Game 70: 10 green,
+    12 red; 5 red, 7 green; 1 blue, 6 red, 11 green
+
+    Game 71: 16 green, 13 red,
+    10 blue; 7 red, 7 blue, 15 green; 17 green, 13 red, 1 blue; 5 blue, 8 green,
+    11 red; 7 red, 1 blue, 15 green; 15 green, 4 blue, 2 red
+
+    Game 72: 3 blue,
+    3 red; 2 blue, 3 red, 1 green; 1 red, 1 blue, 3 green; 1 green, 2 blue, 3 red;
+    3 blue, 1 green, 1 red; 1 blue, 4 red
+
+    Game 73: 10 blue, 11 red, 5 green;
+    6 green, 9 blue, 4 red; 10 red, 5 green, 9 blue
+
+    Game 74: 6 green, 17 blue;
+    1 red, 1 blue, 11 green; 2 blue, 1 red, 3 green
+
+    Game 75: 11 red, 11 green,
+    3 blue; 11 red, 1 blue, 6 green; 4 green, 3 blue, 8 red
+
+    Game 76: 3 green,
+    3 blue, 12 red; 3 blue, 15 green, 3 red; 4 red, 15 green, 2 blue
+
+    Game 77:
+    13 blue, 11 red, 1 green; 3 red, 12 green, 12 blue; 7 red, 15 green, 4 blue;
+    5 red, 2 green, 3 blue
+
+    Game 78: 4 red, 8 blue, 2 green; 7 blue, 3 green,
+    7 red; 3 green, 13 blue; 3 red, 4 green
+
+    Game 79: 7 blue, 13 red, 8 green;
+    7 green, 15 red, 9 blue; 2 green, 8 red, 10 blue; 13 blue, 20 red, 7 green; 11
+    red, 2 green, 14 blue
+
+    Game 80: 12 red; 2 blue, 15 red, 3 green; 1 blue,
+    1 green, 2 red; 1 green; 1 green, 3 blue, 13 red; 1 green, 2 blue, 1 red
+
+    Game
+    81: 11 blue; 6 blue, 8 green, 4 red; 7 blue, 1 red, 1 green
+
+    Game 82: 9
+    blue, 1 red; 3 blue, 1 red, 3 green; 8 blue, 8 green, 2 red; 5 blue
+
+    Game
+    83: 7 blue, 13 red; 4 blue, 2 green, 3 red; 15 blue, 9 red, 1 green; 14 red,
+    1 green, 12 blue
+
+    Game 84: 8 blue, 1 green, 20 red; 9 green, 20 red, 18
+    blue; 16 red, 15 blue, 5 green; 15 red, 10 green, 16 blue; 11 green, 14 red,
+    12 blue
+
+    Game 85: 1 red, 2 blue, 9 green; 13 green, 3 blue, 5 red; 1 green,
+    1 red, 3 blue; 8 green, 2 blue, 1 red
+
+    Game 86: 10 red, 6 blue, 11 green;
+    1 red, 11 green; 7 blue, 6 red, 11 green
+
+    Game 87: 14 red, 4 blue, 4 green;
+    14 red, 4 blue, 7 green; 12 red, 11 green, 5 blue; 5 blue, 12 red
+
+    Game
+    88: 3 green, 4 blue, 11 red; 3 green, 4 blue, 3 red; 10 red, 3 green; 3 blue,
+    2 red, 2 green
+
+    Game 89: 4 blue, 2 red, 3 green; 3 green, 7 red, 13 blue;
+    1 green, 6 blue
+
+    Game 90: 7 red; 5 blue, 11 red, 8 green; 8 red, 3 green,
+    2 blue
+
+    Game 91: 2 blue; 4 red; 2 blue, 4 green; 3 green, 1 blue, 1 red
+
+    Game
+    92: 7 blue, 10 green; 9 green, 9 blue, 7 red; 6 green; 12 red, 1 blue, 4 green;
+    5 red, 1 green, 13 blue
+
+    Game 93: 7 green, 6 red, 1 blue; 3 red, 6 green,
+    8 blue; 1 blue, 6 green; 6 red, 15 blue, 4 green; 10 blue, 2 green, 6 red; 3
+    green, 5 red, 6 blue
+
+    Game 94: 5 red, 1 green, 15 blue; 1 blue, 6 red; 2
+    red, 6 blue, 2 green
+
+    Game 95: 9 blue, 4 red, 17 green; 15 green, 9 red,
+    10 blue; 1 blue, 13 green, 12 red
+
+    Game 96: 1 blue, 12 green, 1 red; 3 blue,
+    1 green, 5 red; 2 blue, 8 red, 10 green
+
+    Game 97: 18 blue, 7 red, 11 green;
+    6 red, 3 blue, 14 green; 1 red, 13 blue, 4 green
+
+    Game 98: 5 blue, 2 green,
+    8 red; 12 red; 13 red, 4 blue, 4 green; 7 red, 11 blue; 10 blue, 2 green, 2 red;
+    6 red, 12 blue
+
+    Game 99: 4 green, 2 blue, 4 red; 9 blue, 11 red, 1 green;
+    5 green
+
+    Game 100: 2 blue, 12 green; 6 green, 1 red, 12 blue; 1 green, 5
+    blue, 1 red; 1 red, 12 green, 6 blue; 16 blue, 3 green'
+  tmproLines: {fileID: 2010501580}
+  tmproTotal: {fileID: 2013125419}
+--- !u!4 &1081467384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081467382}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1736614614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736614616}
+  - component: {fileID: 1736614615}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1736614615
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736614614}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1736614616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736614614}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1906705062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906705065}
+  - component: {fileID: 1906705064}
+  - component: {fileID: 1906705063}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1906705063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906705062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1906705064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906705062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1906705065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906705062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2010501578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010501579}
+  - component: {fileID: 2010501581}
+  - component: {fileID: 2010501580}
+  m_Layer: 5
+  m_Name: lines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2010501579
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010501578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 279684123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: -11}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2010501580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010501578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -502.16577, y: 0, z: -596.55066, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2010501581
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010501578}
+  m_CullTransparentMesh: 1
+--- !u!1 &2013125417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013125418}
+  - component: {fileID: 2013125420}
+  - component: {fileID: 2013125419}
+  m_Layer: 5
+  m_Name: total counter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2013125418
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013125417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 279684123}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -165, y: -11}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2013125419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013125417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -502.16577, y: 0, z: 565.7539, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2013125420
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013125417}
+  m_CullTransparentMesh: 1
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 602920467}
+  - {fileID: 1736614616}
+  - {fileID: 1081467384}
+  - {fileID: 279684123}
+  - {fileID: 1906705065}

@@ -5,7 +5,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class Solver : MonoBehaviour
+public class Day1Solver : MonoBehaviour
 {
     [SerializeField] string input;
     [SerializeField] TextMeshProUGUI tmpro;
