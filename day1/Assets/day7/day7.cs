@@ -104,14 +104,61 @@ public class day7 : MonoBehaviour
         return (jokerCount + maxCount) >= 4;
     }
     
-    private bool FullHouse(int[] hand)
+    public bool FullHouse(int[] hand)
     {
-        int jokerCount = hand.Count(card => card == 1); // Assuming 0 represents a joker
-        var counts = hand.Where(card => card != 1).GroupBy(card => card).ToDictionary(g => g.Key, g => g.Count());
-        bool hasThreeOfAKind = counts.Any(kv => kv.Value + jokerCount >= 3);
-        bool hasPair = counts.Any(kv => kv.Value + (kv.Value + jokerCount >= 3 ? 0 : jokerCount) >= 2);
-        return hasThreeOfAKind && hasPair;
+        Dictionary<int, int> cardCounts = new Dictionary<int, int>();
+        int jokerCount = 0;
+
+        // Count occurrences of each card and jokers
+        foreach (int card in hand)
+        {
+            if (card == 1)
+            {
+                jokerCount++;
+            }
+            else
+            {
+                cardCounts.TryAdd(card, 0);
+                cardCounts[card]++;
+            }
+        }
+
+        int maxCount = 0;
+        int secondMaxCount = 0;
+
+        // Find the two highest frequencies
+        foreach (var count in cardCounts.Values)
+        {
+            if (count > maxCount)
+            {
+                secondMaxCount = maxCount;
+                maxCount = count;
+            }
+            else if (count > secondMaxCount)
+            {
+                secondMaxCount = count;
+            }
+        }
+
+        // Check full house conditions
+        switch (jokerCount)
+        {
+            case 0:
+                return maxCount == 3 && secondMaxCount == 2;
+
+            case 1:
+                // One joker can either complete a three-of-a-kind or upgrade a pair to a three-of-a-kind
+                return (maxCount == 3 && secondMaxCount >= 1) || (maxCount == 2 && secondMaxCount == 2);
+
+            case 2:
+                // Two jokers can complete a three-of-a-kind from a single pair
+                return maxCount >= 2;
+
+            default:
+                return false; // More than two jokers is not a standard scenario
+        }
     }
+
     
     private bool ThreeOfAKind(int[] hand)
     {
