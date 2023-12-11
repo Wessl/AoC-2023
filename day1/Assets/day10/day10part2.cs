@@ -59,6 +59,9 @@ public class day10part2 : MonoBehaviour
         
         // okay so we have a good thingy. now lets through each marked one, and mark those to its side. 
         int snakePosOddMod = 1;
+        // basic explanation: we have a list of snake positions. each snake has a direction, and since its a closed
+        // loop, one side will be "inside" and the other "outside". so for each direction, check my right side
+        // if its a turnpoint, check other directions depending on what is determined to be "outside" for it. 
         foreach (var m in snakepositions)
         {
             Debug.Log($"now trying position {m.pos.ToString()}");
@@ -123,7 +126,7 @@ public class day10part2 : MonoBehaviour
 
         Debug.Log(" ");
         
-        //now we have the edges of interiors filled! yay. now we just have to, keep filling. 
+        //now we have the edges of interiors filled! yay. now we just have to, fill! 
         for (int i = 0; i < coveredInitialPos.Count; i++)
         {
             // if my neighbour is... blank, that is, neither path nor filled already, fill it! 
@@ -153,7 +156,7 @@ public class day10part2 : MonoBehaviour
         }
 
         Debug.Log(str);
-        Debug.Log(counter);
+        Debug.Log(counter); // my answer was counter - 1. i dont know why but maybe the start pos did it? 
         
     }
 
