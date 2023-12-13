@@ -7,6 +7,14 @@ using Debug = UnityEngine.Debug;
 
 public class day12 : MonoBehaviour
 {
+    // le guide
+    /*
+     * idk go very well but I think your code is still useable
+
+I'll explain what made the DP part click for me
+
+the space of possible combinations is a tree that splits into two branches on every question mark, right? But if you expand out the tree (I recommend doing it on the sample if you want to see), many of the branches end up being identical. For example with the sequence ??. if you have a group 1 spring long it doesn't matter which question mark becomes a spring and which becomes empty, they both lead to the same state afterwards. So to save time you want to store/cache the results of states and look in that cache before doing another recursion. To do that you can make a hashmap where the key is the sequence + group numbers and the value is the amount of possible combinations associated There's probably much better ways to do it but this worked for me
+     */
     [TextArea] public string input;
     private Stopwatch watch = new System.Diagnostics.Stopwatch();
     void Start()
