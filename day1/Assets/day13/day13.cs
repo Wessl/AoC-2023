@@ -2,15 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using UnityEditor;
 using UnityEngine;
 
 public class day13 : MonoBehaviour
 {
     [TextArea] public string input;
+    private List<int> originalVerticals;
+    private List<int> originalHorizontals;
     void Start()
     {
-        var lines = input.Split("\r\n");
+        var lines = input.Split("\n");
+        originalVerticals = new List<int>();
+        originalHorizontals = new List<int>();
 
         List<char[,]> horizontals = new List<char[,]>();
         var rectangleDimensions = GetRectangleDimensions(lines);
@@ -24,7 +29,6 @@ public class day13 : MonoBehaviour
             var line = lines[index];
             if (string.IsNullOrEmpty(line))
             {
-                Debug.Log("adding horizontal.");
                 horizontals.Add(horizontal);
                 rdIndex++;
                 horizontal = new char[rectangleDimensions[rdIndex].height, rectangleDimensions[rdIndex].width]; // Start a new horizontal array
@@ -38,19 +42,53 @@ public class day13 : MonoBehaviour
                 }
             }
         }
-        if (horizontal != null)
-        {
-            Debug.Log("adding horizontal");
-            horizontals.Add(horizontal);
-        }
-
+        horizontals.Add(horizontal);
         var verticals = new List<char[,]>();
         foreach (var vertical in horizontals)
         {
             verticals.Add(TransposeRowsAndColumns(vertical));
+            PrintJagged(vertical);
         }
 
         AnalyzePatterns(horizontals, verticals);
+        // Now we have a list of the existing mirrorings. Save the line for each one, 
+        // and then go through everything, change one char at a time, then check them again
+        // if it's different but valid, that's the one we use. 
+        int newRunningCount = 0;
+        for (int i = 0; i < horizontals.Count; i++)
+        {
+            // For each rectangular grid thingy, 
+            var horiz = horizontals[i];
+            var vertis = verticals[i];
+            for (int j = 0; j < horiz.GetLength(0); j++)
+            {
+                for (int k = 0; k < horiz.GetLength(1); k++)
+                {
+                    // swap this one
+                    horiz[j, k] = horiz[j, k] == '.' ? '#' : '.';
+                    var temp = AnalyzePatternsAgain(horiz, vertis, i);
+                    newRunningCount += temp;
+                    horiz[j, k] = horiz[j, k] == '.' ? '#' : '.';
+                    if (temp != 0) goto Foo;
+                }
+            }
+            Foo:
+            for (int j = 0; j < vertis.GetLength(0); j++)
+            {
+                for (int k = 0; k < vertis.GetLength(1); k++)
+                {
+                    // swap this one
+                    vertis[j, k] = vertis[j, k] == '.' ? '#' : '.';
+                    var temp = AnalyzePatternsAgain(horiz, vertis, i);
+                    newRunningCount += temp;
+                    vertis[j, k] = vertis[j, k] == '.' ? '#' : '.';
+                    if (temp != 0) goto Bar;
+                }
+            }
+            Bar: ;
+        }
+
+        Debug.Log($"here it really is: {newRunningCount}");
     }
     
     string List2Str(List<char> str)
@@ -61,6 +99,7 @@ public class day13 : MonoBehaviour
     void AnalyzePatterns(List<char[,]> horizontals, List<char[,]> verticals)
     {
         int runningCount = 0;
+        Debug.Log($"so, there are {horizontals.Count} horizonals, and {verticals.Count} verticals.");
         for (int i = 0; i < horizontals.Count; i++)
         {
             var horizontal = horizontals[i];
@@ -76,10 +115,12 @@ public class day13 : MonoBehaviour
                         //Debug.Log($"adding my boi {(j+1)*100} after having checked the following two rows against each other: ");
                         //Debug.Log(List2Str(GetRow(horizontal, j).ToList()));
                         //Debug.Log(List2Str(GetRow(horizontal, j+1).ToList()));
-                        runningCount += (j+1)*100;
+                        originalHorizontals.Add(j+1);
+                        runningCount += (j+1)*100; 
                     }
                 }
             }
+            if (originalHorizontals.Count <= i) originalHorizontals.Add(-1);
 
             //Debug.Log("Checking vertical...");
             //PrintJagged(vertical);
@@ -92,13 +133,56 @@ public class day13 : MonoBehaviour
                         //Debug.Log($"adding my boi {j+1} after having checked the following two rows against each other: ");
                         //Debug.Log(List2Str(GetRow(vertical, j).ToList()));
                         //Debug.Log(List2Str(GetRow(vertical, j+1).ToList()));
+                        originalVerticals.Add(j+1);
                         runningCount += j+1;
                     }
                 }
             }
+            if (originalVerticals.Count <= i) originalVerticals.Add(-1);
         }
 
-        Debug.Log($"here it is: {runningCount}");
+        Debug.Log("original verticals count> " + originalVerticals.Count);
+        Debug.Log("original horizontals count> " + originalHorizontals.Count);
+
+        //Debug.Log($"here it is: {runningCount}");
+    }
+    
+    int AnalyzePatternsAgain(char[,] horizontal, char[,] vertical, int outerIndex)
+    {
+        int runningCount = 0;
+
+        for (int j = 0; j < horizontal.GetLength(0)-1; j++)
+        {
+            if (GetRow(horizontal, j).SequenceEqual(GetRow(horizontal, j + 1)))
+            {
+                if (IsMirrored(horizontal, j) && originalHorizontals[outerIndex] != (j+1))
+                {
+                    Debug.Log($"in the new version of horiz, while checking out index {outerIndex} we found one at row number {j+1}");
+                    runningCount += (j+1)*100;
+                    break;
+                }
+            }
+        }
+        
+        for (int j = 0; j < vertical.GetLength(0)-1; j++)
+        {
+            if (GetRow(vertical, j).SequenceEqual(GetRow(vertical, j + 1)))
+            {
+                if (IsMirrored(vertical, j) && originalVerticals[outerIndex] != (j+1))
+                {
+                    Debug.Log($"in the new version of vertis, while checking out index {outerIndex} we found one at row number {j+1}");
+                    runningCount += j+1;
+                    break;
+                }
+            }
+        }
+
+        if (runningCount != 0)
+        {
+            Debug.Log($"here it is: {runningCount}");
+        }
+
+        return runningCount;
     }
 
     bool IsMirrored(char[,] zals, int j)
